@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+
+
 /*Menu*/
 
 
@@ -180,4 +182,507 @@
     font-size: 40px;
     text-align: center;
     margin-top: 1.5em;
+    height: 30px;
+}
+
+.plan p {
+    text-align: center;
+    font-size: 16px;
+    font-family:  'Noto Sans', sem serifa;
+}
+
+/*Cartões*/
+
+.cartoes{
+    margin-left: 26em;
+}
+.cartoes ul{
+    display: flex;
+    list-style: none;
+}
+.cartoes ul li{
+    margin-left: 1em;
+}
+
+.cartoes ul li img{
+
+    width: 29px;
+}
+
+.cartoes ul li:nth-child(5){
+    height: 0px;
+    margin-top: 5px;
+}
+
+.cartoes ul li a{
+    color: black;
+    cursor: auto;
+}
+
+
+.cartoes-escond ul{
+    
+    display: none;
+    position: absolute;
+    top: 115%;
+    left: 65%;
+    right: 19%;
+    padding: 8px 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 20%) 0px 6px 18px;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    z-index: 1;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+
+    transition: 1s;
+    
+    
+}
+
+.mostrar:hover .escond{
+    display: block;
+    animation: ulescond 1s;
+}
+
+@keyframes ulescond{
+    from{
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-100px);
+        opacity: 1;
+    }
+}
+.cartoes-escond ul li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    display: inline-block;
+}
+
+
+.cartoes-escond ul li img{
+    width: 20px;
+}
+
+/*Cards*/
+.pai{
+    display: flex;
+    margin-top: 4em;
+}
+/*Card 1*/
+section{
+    margin-left: 1em;
+}
+
+.face{
+   
+    perspective: 700ms;
+}
+.basico{
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.basico, .open{
+    position: absolute;
+    width: 300px;
+    height: 650px;
+    
+}
+.basico img{
+    width: 100px;
+    margin-left: 6em;
+    margin-top: 16em;
+   
+}
+
+.basico h1{
+    text-align: center;
+    color: black;
+    margin-left: -1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.open{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  box-shadow: 0 0 0.5em black;
+  border-radius: 10px;
+}
+
+
+.open, .basico{
+    transition: .7s;
+  
+}
+
+.face:hover .basico{
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.face:hover .open{
+    transform: rotateY(-180px);
+}
+
+
+
+.open p:first-child{
+    text-align: center;
+    background-color: #2e77d0;
+    color: white;
+    font-size: 14px;
+    width: 200px;
+    margin-left: 1.4em;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    height: 14px;
+}
+
+.open h1{
+    margin-left: 1em;
+}
+
+.open p{
+    margin-left: 1.5em;
+    margin-right: 1em;
+}
+
+.open hr{
+    margin-top: 3em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.open ul{
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+.open ul li{
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+.open button{
+    font-size: inherit;
+    margin-left: 3em;
+    margin-top: 10em;
+    
+    padding: 17px 48px;
+    border-radius: 500px;
+
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    
+
+    font-family: 'Noto Sans', sem serifa;
+    border: none;
+
+    cursor: pointer;
+  
+
+    overflow: hidden;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.open button:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1) ;
+     
+   
+    
+ }
+
+
+ .footer, a{
+     color: #535353;
+     font-size: 12px;
+ }
+
+ 
+ /*Card 2*/
+
+ .inter{
+     margin-left: 19em;
+     perspective: 700ms;
+
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+ }
+ .inter:hover .inter1{
+    transform: rotateY(180deg);
+    
+    z-index: 0;
+ }
+
+ .inter:hover .inter2{
+    transform: rotateY(-180px);
+}
+ .inter1 img{
+    width: 100px;
+    margin-left: 6em;
+    margin-top: 16em;
+ }
+
+ 
+ .inter1{
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+    backface-visibility: hidden;
+
+  
+}
+.inter1 h1{
+    text-align: center;
+    margin-left: -1em;
+}
+.inter1, .inter2{
+    position: absolute;
+    width: 300px;
+    height: 650px;
+
+    
+    
+}
+.inter1, .inter2{
+    transition: .7s;
+}
+
+
+.inter2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    box-shadow: 0 0 0.5em black;
+    border-radius: 10px;
+    
+}
+
+.inter2 p:first-child{
+    text-align: center;
+    background-color: #2e77d0;
+    color: white;
+    font-size: 14px;
+    width: 200px;
+    margin-left: 1.4em;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    height: 14px;
+}
+.inter2 p:nth-child(2){
+   border-radius: 5px;
+   border: 1px solid #2e77d0;
+   color: #2e77d0;
+   font-size: 14px;
+   padding: 4px 8px;
+   font-weight: 900;
+   margin: 0px 4px 10px 0px;
+   display: inline-block;
+   margin-left: 1.5em;
+}
+.inter2 h1{
+     
+    margin-left: 1em;
+    
+ }
+
+ .inter2 p{
+    margin-left: 1.5em;
+    margin-right: 1em;
+ }
+ .inter2 hr{
+    margin-top: 3em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+ }
+
+ .inter2 ul{
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+.inter2 ul li{
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+.inter2 button{
+    font-size: inherit;
+    margin-left: 3em;
+    margin-top: 0.6em;
+    
+    padding: 17px 48px;
+    border-radius: 500px;
+
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    
+
+    font-family: 'Noto Sans', sem serifa;
+    border: none;
+
+    cursor: pointer;
+  
+
+    overflow: hidden;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.inter2 button:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1) ;
+}
+
+.footerinter, a{
+    color: #535353;
+    font-size: 12px;
+}
+
+
+/*Card 3*/
+
+.duo{
+    margin-left: 19em;
+    perspective: 700ms;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.duo:hover .duo1{
+    transform: rotateY(180deg);
+    
+    z-index: 0;
+ }
+
+ .duo:hover .duo2{
+    transform: rotateY(-180px);
+}
+
+.duo1{
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+    backface-visibility: hidden;
+
+  
+}
+
+.duo1 img{
+    width: 100px;
+    margin-left: 6em;
+    margin-top: 16em;
+}
+.duo1 h1{
+    text-align: center;
+    margin-left: -1em;
+}
+
+.duo1, .duo2{
+    position: absolute;
+    width: 300px;
+    height: 650px;
+}
+.duo1, .duo2{
+    transition: .7s;
+}
+
+.duo2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    box-shadow: 0 0 0.5em black;
+    border-radius: 10px;
+    
+  
+}
+
+.duo2 p:first-child{
+    text-align: center;
+    background-color: #2e77d0;
+    color: white;
+    font-size: 14px;
+    width: 200px;
+    margin-left: 1.4em;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    height: 14px;
+}
+.duo2 p:nth-child(2){
+   border-radius: 5px;
+   border: 1px solid #2e77d0;
+   color: #2e77d0;
+   font-size: 14px;
+   padding: 4px 8px;
+   font-weight: 900;
+   margin: 0px 4px 10px 0px;
+   display: inline-block;
+   margin-left: 1.5em;
+}
+
+.duo2 h1{
+    margin-left: 1.3em;
+    height: 5px;
+}
+
+.duo2 p{
+    margin-left: 1.5em;
+    margin-right: 1em;
+}
+
+.duo2 ul{
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+.duo2 ul li{
+    font-size: 16px;
+    margin-top: 0.2em;
+}
+
+.duo2 button{
+    font-size: inherit;
+    margin-left: 3em;
+    margin-top: 0em;
+    
+    padding: 17px 48px;
+    border-radius: 500px;
+
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    
+
+    font-family: 'Noto Sans', sem serifa;
+    border: none;
+
+    cursor: pointer;
+  
+
+    overflow: hidden;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.duo2 button:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1) ;
 }
