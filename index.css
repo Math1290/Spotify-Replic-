@@ -2,7 +2,271 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 
+/*Entrar*/
 
+
+.entrar{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -1em;
+    position: fixed;
+    display: none;
+    transition: 1s;
+    
+   
+
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+
+.login{
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.login img{
+    width: 150px;
+    margin-left: 37%;
+    margin-top: 1em;
+}
+
+.login input{
+    color: #1ED760;
+}
+
+.login input{
+    display: block;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    padding: 14px 32px;
+}
+#email{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#olho{
+    position: absolute;
+    width: 20px;
+    margin-left: 65%;
+    margin-top: -5%;
+    cursor: pointer;
+}
+#enviar{
+    width: 150px;
+    background-color: #1ED760;
+    color: white;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    height: 50px;
+    border: none;
+
+    overflow: hidden;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    font-weight: 500;
+}
+#enviar:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.login input:last-child{
+  
+}
+
+.alternative{
+
+    margin-top: 5px;
+    margin-left: 47%;
+}
+.alternative span{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(104, 104, 104, 0.3);
+    position: relative;
+}
+.alternative span::before, .alternative span::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    right: 50px;
+    background-color: rgba(104, 104, 104, 0.3);
+    margin-top: 10px;
+}
+
+.alternative span::after{
+    left: 50px;
+}
+
+.login button{
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+
+    margin-top: 0.5em;
+    padding: 14px 32px;
+    border-radius: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    font-weight: 500;
+}
+
+#face{
+    background-color: #1a68c7;
+    color: white;
+    border: none;
+}
+#face:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#google{
+    display:flex;
+    background-color: white;
+   
+}
+#google:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#google img{
+    width: 20px;
+    margin-left: -1em;
+    margin-right: 10px;
+    margin-top: -0.2em;
+   
+}
+
+
+
+#carregar{
+  display: none;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+   
+    margin-left: -1em;
+    margin-right: -12em;
+    position: fixed;
+
+}
+
+.carrregando{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 23%;
+    margin-top: 10%;
+    position: relative;
+    
+}
+.carrregando::before, .carrregando::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+.carrregando::before{
+    width: 100%;
+    height: 100%;
+    border-color: greenyellow;
+    border-bottom-color: rgb(10, 99, 62);
+    border-style: solid;
+    border-width: 4px;
+    animation: car  .4s infinite linear;
+}
+@keyframes car {
+    from{
+        transform: rotate(360deg);
+    }
+}
+.porcentagem{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    z-index: 1;
+    position: fixed;
+    position: absolute;
+    text-align: center;
+  margin-left: 1.5em;
+  margin-top: 2.5em;
+
+
+}
+/*Parabenização*/
+.parabenizaco{
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    margin-left: -1em;
+   
+    display: none;
+}
+.msgm{
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    margin-left: 30%;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+.msgm img{
+   width: 26px;
+   margin-left: 45%;
+}
+
+.msgm h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1ED760;
+}
+.msgm p {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.msgm p a{
+    color: rgb(28, 204, 5);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.msgm p a:hover{
+    text-decoration:underline;
+}
 /*Menu*/
 
 
@@ -11,6 +275,7 @@
     margin-left: -1em;
     margin-top: -1em;
     margin-right: -0.5em;
+    
 
     height: 80px;
 }
