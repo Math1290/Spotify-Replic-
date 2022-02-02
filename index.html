@@ -15,8 +15,8 @@
         <div class="login">
                 <img src="imagens/Cadastro/logo.jpg" alt="logo-spotify">
                 <br>
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                <input class="senha" type="password" name="senha" id="senha" placeholder="Senha">
+                <input type="email" name="email" id="email" placeholder="E-mail" class="erro">
+                <input class="senha" type="password" name="senha" id="senha" placeholder="Senha" class="erro">
                 <img class="olho" id="olho" src="imagens/Cadastro/olho-aberto.png" alt="olho-aberto">
                 <button id="enviar" class="enviar" onclick="animate()">Enviar</button>
 
@@ -27,8 +27,8 @@
                 </div>
 
 
-                <button id="face">Acesse pelo Facebook</button>
-                <button id="google"><img src="imagens/Cadastro/icons8-google-logo-20.png" alt="logo-google"> Acesse pelo Goolgle</button>
+                <button id="face" class="redes" onclick="redesSociais()">Acesse pelo Facebook</button>
+                <button id="google" class="redes" onclick="redesSociais()"><img src="imagens/Cadastro/icons8-google-logo-20.png" alt="logo-google"> Acesse pelo Goolgle</button>
                
         </div>
     </div>
